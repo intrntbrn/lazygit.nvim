@@ -77,7 +77,7 @@ local function lazygit(path)
 
   win, buffer = open_floating_window()
 
-  local cmd = "lazygit"
+  local cmd = "lazygit --git-dir=$GIT_DIR --work-tree=$GIT_WORK_TREE"
 
   -- set path to the root path
   _ = project_root_dir()
